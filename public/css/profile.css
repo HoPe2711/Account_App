@@ -1,0 +1,387 @@
+@import "layout.css";
+
+html, body, div {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+#page {
+    display: flex;
+    align-items: stretch;
+}
+
+#menu-left {
+    width: 90px;
+    background-color: #21272d;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+#menu-left .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#menu-left .item {
+    padding: 4px 0;
+    width: 90px;
+    height: 75px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#menu-left .item:hover {
+    background-color: gray;
+}
+
+#menu-left .icon {
+    padding: 11px 0;
+    width: 24px;
+    margin: 0 auto;
+    color: white;
+}
+
+#menu-left .func {
+    font-size: 12px;
+    color: #888;
+    padding: 0 8px 15px 8px;
+    width: 74px;
+    height: 14px;
+    margin-top: -2px;
+    text-align: center;
+}
+
+#menu-left .avatar {
+    padding: 4px 0;
+    width: 90px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-left .avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    display: block;
+}
+
+#menu-right {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #eee;
+    background-color: #f6f6f6;
+}
+
+#menu-right .info {
+    padding: 13px 15px;
+    width: 240px;
+    height: 47px;
+}
+
+#menu-right .info .fi {
+    font-size: 22px;
+    font-weight: 300;
+    color: #111;
+    height: 65%;
+}
+
+#menu-right .info .se {
+    padding-top: 4px;
+    color: #999;
+}
+
+#menu-right .title {
+    border: 1px;
+    padding: 20px 20px 15px 20px;
+    width: 230px;
+    height: 17px;
+    border-top: 1px solid #eee;
+    color: #999;
+    font-weight: 300;
+}
+
+#menu-right .func {
+    padding: 10px 10px 10px 20px;
+    width: 212px;
+    height: 17px;
+    font-weight: normal;
+    color: #555555;
+    display: flex;
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+#menu-right .func:hover {
+    color: #267cde;
+    font-weight: bold;
+}
+
+#menu-right .icon {
+    width: 20px;
+}
+
+#menu-right .block {
+    padding-bottom: 20px;
+}
+
+#content {
+    flex-grow: 1;
+}
+
+#content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    padding: 18px 0;
+    border-bottom: 2px solid #eee;
+}
+
+#content .header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#content .header-left .account {
+    text-transform: uppercase;
+    color: #ccc;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+#content .header-left .info {
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 300;
+    color: #222;
+}
+
+#content .header button {
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    border-radius: 4px;
+    padding: 9px 15px;
+    background-color: #17C286;
+    top: 18px;
+    right: 0;
+    white-space: nowrap;
+}
+
+#content .layout {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#content .layout .body {
+    display: flex;
+    flex-direction: column;
+}
+
+#content .layout .body .info-layout {
+    display: flex;
+    gap: 20px;
+    width: 600px;
+    padding-bottom: 30px;
+}
+
+#content .layout .body .info-layout .layout-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content .layout .body .info-layout .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+#profile-avatar-form {
+    display: none;
+}
+
+#content .layout-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+#content .layout-detail .name {
+    font-size: 26px;
+    font-weight: normal;
+    color: #111;
+}
+
+#content .layout-detail .job-title {
+    padding-top: 8px;
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #aaa;
+}
+
+#content .profile-table-title {
+    width: 110px;
+    padding: 0;
+    color: #666;
+    font-weight: 500;
+}
+
+#content .main-func-layout {
+    padding: 40px 0 20px 0;
+}
+
+#content .main-func-title {
+    padding: 15px 0;
+    border-bottom: 2px solid #eee;
+    font-weight: 500;
+    font-size: 13px;
+    color: #aaa;
+}
+
+#content .main-func-layout table {
+    padding: 10px;
+}
+
+#content .main-func-notify {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #F8F8F8;
+    text-align: center;
+    color: #888;
+    font-weight: 300;
+}
+
+.profile-pop-up-container {
+    width: 760px;
+    height: 670px;
+}
+
+.pop-up-container .pop-up-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 18px;
+    background-color: #eee;
+}
+
+.pop-up-container .pop-up-title {
+    color: #555;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 500px;
+}
+
+.profile-pop-up-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.profile-pop-up-content {
+    border: 1px;
+    padding: 30px 20px;
+}
+
+.profile-pop-up-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 18px;
+}
+
+.profile-pop-up-row div {
+    float: left;
+    font-weight: 500;
+    font-size: 14px;
+    width: 180px;
+    padding: 0;
+}
+
+.profile-pop-up-row div div {
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+    text-align: justify;
+    padding-top: 2px;
+}
+
+.profile-pop-up-row input {
+    border-top: 1px solid #d3d3d3;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #d3d3d3;
+    border-bottom: 1px solid #ccc;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.profile-pop-up-row .layout-select {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.profile-pop-up-button {
+    overflow: hidden;
+    padding-top: 20px;
+    border-top: 1px dashed #ddd;
+    margin-top: 5px;
+    display: flex;
+    gap: 20px;
+}
+
+.profile-pop-up-button button {
+    padding: 11px 0;
+    width: 48%;
+    border-radius: 3px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+#password-pop-up-container {
+    width: 520px;
+    height: 458px;
+}
+
+.password-pop-up-note {
+    background-color: #f3f3f3;
+    text-align: center;
+    font-style: italic;
+    font-size: 13px;
+    color: #888;
+    padding: 13px 20px;
+    margin-bottom: 25px;
+}
+
+#menu-left .item-select {
+    font-weight: bold;
+    color: #fff;
+}
+
+#menu-right .item-select {
+    font-weight: bold;
+    color: #267cde;
+}
+
+.unselect {
+    font-weight: normal;
+    color: #888;
+}
+
+#notify-error {
+    color: red;
+    display: none;
+    text-align: center;
+}

@@ -1,0 +1,238 @@
+@import "layout.css";
+
+#page {
+    position: absolute;
+    padding: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    left: 0;
+    min-height: 100%;
+}
+
+#page:after {
+    position: absolute;
+    left: 600px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    background-image: url(https://static-gcdn.basecdn.net/account/image/background.png);
+    background-position: right bottom;
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+#auth {
+    width: 600px;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#auth .box-wrap {
+    max-width: 550px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#auth .box-wrap .auth-logo {
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+
+#auth .box-wrap h1 {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    padding: 35px 0 8px 0;
+    margin: 0;
+}
+
+#auth .box-wrap .auth-sub-title {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+#auth .box .form {
+    padding: 30px 0;
+}
+
+#auth .box .form .row {
+    padding-bottom: 20px;
+}
+
+#auth .box .form .row .label {
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#auth .box .form .row .input input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+#auth .box .form .row .submit {
+    background-color: #2bd14e;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 11px 25px;
+    border-radius: 3px;
+    margin-top: 40px;
+    width: 100%;
+    border: none;
+}
+
+#auth .box .form .row .submit:hover {
+    opacity: 0.8;
+    filter: alpha(Opacity:80);
+}
+
+#auth .box .form .row .register {
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+}
+
+#auth .box .form .row .checkbox {
+    position: absolute;
+    font-size: 13px;
+    color: #888;
+    left: 0;
+    top: 0;
+}
+
+#auth .box .form .row .checkbox input {
+    vertical-align: -2px;
+}
+
+#auth .box .form .row .oauth {
+    overflow: hidden;
+    padding-top: 35px;
+}
+
+#auth .box .form .row .oauth .label {
+    text-align: center;
+    position: relative;
+}
+
+#auth .box .form .row .oauth .label:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    height: 1px;
+    background-color: #eee;
+    content: "";
+}
+
+#auth .box .form .row .oauth .label span {
+    position: relative;
+    font-weight: normal;
+    color: #aaa;
+    padding: 2px 10px;
+    background-color: #fff;
+}
+
+#auth .box .form .row .oauth-login {
+    background-color: #f3f3f3;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    color: #267cde;
+    padding: 10px 10px;
+    border-radius: 3px;
+    margin-top: 20px;
+    width: 49%;
+}
+
+#auth .box .form .row .oauth-login.left {
+    margin-right: 2%;
+}
+
+#auth .box .extra {
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+}
+
+#auth .box .extra .simple {
+    text-align: center;
+    font-size: 15px;
+    color: #888;
+}
+
+#auth .box .extra .simple a {
+    font-weight: normal;
+    color: #267cde;
+}
+
+#auth .login .invalid-feedback {
+    visibility: hidden;
+    height: 0;
+}
+
+#auth .register .invalid-feedback {
+    padding-top: 5px;
+    color: red;
+    font-size: 12px;
+}
+
+.login-pop-up {
+    display: block;
+}
+
+.login-pop-up-container {
+    width: 430px;
+    height: 162px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-pop-up-container button {
+    width: 100%;
+    height: 100%;
+    color: #c65144;
+    font-weight: bold;
+    border: none;
+}
+
+.pop-up-container .layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.pop-up-container .layout .notify {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pop-up-container .layout .content {
+    padding: 30px 5px 25px 5px;
+    width: 100%;
+    height: 40px;
+}
